@@ -7,10 +7,10 @@
  */
 
 function capitalize(str) {
-  let mas = str.split(" ");
-  let result = [];
+  const mas = str.split(" ");
+  const result = [];
   mas.forEach(function (word) {
-    let firstLetter = word.slice(0, 1);
+    const firstLetter = word.slice(0, 1);
     result.push(firstLetter.toUpperCase() + word.slice(1));
   });
   return result.join(" ");
